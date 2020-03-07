@@ -1,30 +1,41 @@
 import React from 'react';
-import Navbar from './navbar';
-import Footer from './footer.js';
+//import React, { Component } from 'react'
+import WOW from 'wowjs';
+import Nav from './Navbar';
 import About from './About.js';
+import Skills from './skills.js';
+//import Work from './Work.js';
+//import Footer from './footer.js';
 import './App.css';
 
-
-  //document.body.style = "background-color: #262626;";
-
-   
-
+  document.body.style = "scroll-behavior: smooth;";
+  window.wow = new WOW.WOW({
+      offset : '0',
+      mobile : true,
+      boxClass : 'wow',
+      animateClass : 'animated',
+      live : true,
+      scrollContainer : null
+    }
+  );
+  window.wow.init();
+  
   const App = () =>
   {
     return(
       <div>
-            <div class="container split animated fadeIn">
+            <div class="container split" id="landingPage">
               <div class="row">
                 <div class="col-lg-6">
-                <Navbar />
-                  <div class="mt-5 main-info-section">
+                <Nav />
+                  <div class="mt-5 main-info-section  animated fadeInDown">
                     <h1>
                       <span class="font-weight-bold hvr-grow">H</span>
                       <span class="font-weight-bold hvr-grow">i</span>
                     </h1>
                     <h1>
-                      <span class="font-weight-bold hvr-grow">I</span>
-                      <span class="font-weight-bold hvr-grow">'</span>
+                      <span class="font-weight-bold hvr-grow ">I</span>
+                      <span class="font-weight-bold hvr-grow ">'</span>
                       <span class="font-weight-bold hvr-grow mr-2">m</span>
                       <span class="font-weight-bold text-danger hvr-grow"> I</span>
                       <span class="font-weight-bold text-danger hvr-grow"> a</span>
@@ -48,20 +59,21 @@ import './App.css';
                       <span class="font-weight-bold hvr-grow"> o</span>
                       <span class="font-weight-bold hvr-grow"> p</span>
                       <span class="font-weight-bold hvr-grow"> e</span>
-                      <span class="font-weight-bold hvr-grow"> r.</span>
+                      <span class="font-weight-bold hvr-grow">r.</span>
                     </h1>
-                    <p class="par-color">Css / Javascript / React / Nodejs</p>
+                    <p class="par-color animated fadeInDown">Css / Javascript / React / Nodejs</p>
                   </div>
                   </div> 
                   <div class="col-lg-6">
                   <div class="right">
-                    <img src={require('./image/split.jpg')} alt=""/>
+                    <img class="animated fadeIn" src={require('./image/split.jpg')} alt=""/>
                   </div>
                   </div>
                 </div> 
-                <button type="button" class="btn-contact animated fadeIn">Contact me</button>
+                <button type="button" class="btn-contact animated fadeInLeft">Contact me</button>
              </div>
              <About />
+             <Skills />
         </div>
     );
   }
