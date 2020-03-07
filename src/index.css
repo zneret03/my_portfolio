@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,11 +11,6 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
-}
-
-.footer-color
-{
-  background-color: ;
 }
 
 .navbar-color
@@ -34,7 +30,7 @@ code {
 
 a
 {
-  font-size: 16px;
+  font-size: 14px;
 }
 
 nav a:hover
@@ -50,11 +46,198 @@ nav a:hover
 .par-color
 {
   color: #585A5C;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
 }
 
 .main-info-section
 {
-  margin-top: 50em;
+  position: relative;
+  top: 50px;
 }
+
+.btn-contact
+{
+  border: 3px solid #9F5E60;
+  background-color: transparent;
+  padding: 9px 20px 9px;
+  margin: 3em 0px 0px;
+  font-size: 13px;
+  color: #a8a1a1;
+  font-family: 'Montserrat', sans-serif;
+  position: relative;
+  margin: 8em 0;
+}
+
+.btn-contact::after
+{
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: scaleY(0);
+  transform-origin: top center;
+  background: #9F5E60;
+  z-index: -1;
+  transition: transform 0.3s;
+}
+
+.btn-contact:hover::after
+{
+  transform: scaleY(1);
+  
+}
+
+
+.about-me
+{
+  position: relative;
+  top: 10em;
+  box-shadow: 0 0 1.5em rgba(0, 0, 0, 0.1);
+  padding: 50px 50px 100px;
+}
+
+.about-me h1
+{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+}
+
+
+.about-me h1:nth-child(3)
+{
+  padding: 0 0 20px;
+}
+
+.about-me p
+{
+  color: #ACACAC;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+}
+
+.brand-logo
+{
+  position: relative;
+  left: 50px;
+}
+
+.about-me img
+{
+  position: relative;
+  z-index: 1;
+  top: 60px;
+  right: 6em;
+  float: right;
+  transform: translateX(50%);
+  width: 30%;
+  height: 30%;
+  opacity: .5;
+  color: white;
+}
+
+.about
+{
+  position: absolute;
+  color: #737373;
+  font-size: 10em;
+  font-weight: bold;
+  margin: 5px 50px 50px;
+  opacity: .1;
+}
+
+.right img
+{
+  height: 100vh;
+  width: 109vh;
+}
+
+#about_me img
+{
+  position: relative;
+  top: 9em;
+  height: 95vh;
+  width: 95vh;
+}
+
+.left img
+{
+  position: relative;
+  top: 10em;
+  height: 80vh;
+  width: 85vh;
+}
+
+.line
+{
+  width: 22%;
+  height: 3px;
+  background-color: #737373;
+}
+
+.hi
+{
+  font-size: 50px;
+}
+
+.nav li:hover:nth-child(2):hover ~ .line
+{
+  transform: translate(120px);
+  transition:  all .4s ease-in-out;
+}
+
+.nav li:hover:nth-child(3):hover ~ .line
+{
+  transform: translate(243px);
+  transition:  all .4s ease-in-out;
+}
+
+.about-me-info
+{
+  max-width: 900px;
+  box-shadow: 0 1em 1.2em rgba(0, 0, 0, 0.25);
+  padding: 70px 70px 100px;
+  position: relative;
+  top: -80px;
+  left: 50%;
+  right: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.right
+{
+  position: absolute;
+  height: 10%;
+  width: 10%;
+}
+
+.about-me-info p
+{
+  position: relative;
+  margin: 0em;
+  right: 50px;
+  left: 10px;
+  color: #252627;
+}
+
+.about-me-info p:nth-child(2)
+{
+  position: relative;
+  top: 15px;
+  color: #252627;
+}
+
+.about-me-info p:nth-child(3)
+{
+  position: relative;
+  top: 25px;
+  right: 50px;
+  left: 10px;
+  color: #252627;
+}
+
 
 
