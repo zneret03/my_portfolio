@@ -4,13 +4,13 @@ import WOW from 'wowjs';
 import Nav from './Navbar';
 import About from './About.js';
 import Skills from './skills.js';
-//import Work from './Work.js';
-//import Footer from './footer.js';
+import Work from './Work.js';
+import Footer from './footer.js';
 import './App.css';
 
   document.body.style = "scroll-behavior: smooth;";
   window.wow = new WOW.WOW({
-      offset : '0',
+      offset : '80',
       mobile : true,
       boxClass : 'wow',
       animateClass : 'animated',
@@ -74,6 +74,8 @@ import './App.css';
              </div>
              <About />
              <Skills />
+             <Work />
+             <Footer />
         </div>
     );
   }
