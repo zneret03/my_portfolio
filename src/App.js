@@ -75,6 +75,7 @@ import './App.css';
              <About />
              <Skills />
              <Work />
+             <br/>
              <Footer />
         </div>
     );
