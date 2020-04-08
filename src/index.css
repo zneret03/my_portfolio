@@ -31,6 +31,10 @@ code {
   top: 10em;
 }
 
+.openSideBar
+{
+  display: none;
+}
 
 .skills
 {
@@ -122,6 +126,7 @@ nav a:hover
   top: 10em;
   box-shadow: 0 0 1.5em rgba(80, 79, 79, 0.1);
   padding: 50px 50px 50px;
+  margin-bottom: 16em;
 }
 
 .about-me h1
@@ -411,6 +416,7 @@ nav a:hover
   right: 3em;
 }
 
+/*Work module*/
 .flex
 {
   position: relative;
@@ -461,8 +467,229 @@ nav a:hover
   transform: translate(-50%, -50%);
   text-align: center;
 }
+/*Work module*/
 
-@media only screen and (max-width: 1366px )
-{ 
-  
+.footer
+{
+  position: fixed;
 }
+
+.sideBar 
+{
+  display: none;
+}
+/*
+@media only screen and (max-width: 482px )
+{ 
+  .right img
+  {
+    display: none;
+  }
+
+  .flex
+  {
+    position: relative;
+    width: 50%;
+    display: flex;
+  }
+
+  .flex-image
+  {
+    display: flex;
+  }
+
+  .img
+  {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .overlay
+  {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    background-color: white;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+  }
+
+  .flex:hover .overlay
+  {
+    bottom: 0;
+    height: 100%;
+  }
+
+  .text
+  {
+    color: black;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+}
+
+@media only screen and (max-width: 666px)
+{
+  .right img
+  {
+    display: none;
+  }
+}
+*/
+
+@media only screen and (max-width: 990px)
+{
+  .right img
+  {
+    display: none;
+  }
+
+  .img-about  
+  {
+    display: none;
+  }
+
+  /*Work module*/
+  .flex
+  {
+    flex: 50%;
+    pad: 0 4px;
+  }
+
+  .flex-image
+  {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .img
+  {
+    display: flex;
+    width: 100%;
+    height: auto;
+  }
+
+  .overlay
+  {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    background-color: white;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+  }
+
+  .flex:hover .overlay
+  {
+    bottom: 0;
+    height: 100%;
+  }
+
+  .text
+  {
+    color: black;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+ /*Work module*/
+
+ /*Side bar toggle*/
+ .openSideBar
+ {
+   border: transparent;
+   background-color: white;
+   display: inline;
+   font-size: 30px;
+ }
+
+
+  .sideBar
+  {
+    height: 100vh;
+    width: 300px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: -100%;
+    background-color: #ffffff;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    animation: slide-open 0.6s forwards;
+    display: block;
+  }
+
+
+  @keyframes slide-open {
+    100%{
+      left: 0;
+    }
+  }
+
+  .sideBar a
+   {
+     padding: 8px 8px 8px 8px;
+     text-decoration: none;
+     font-size: 25px;
+     color: #212529;
+     display: block;
+     transform: 0.3s;      
+     margin: 0 2em 0;                                              
+   }     
+
+   .closebtn
+   {
+     left: -100%;
+   }
+
+   .sideBar .closebtn
+   {
+      position: absolute;
+      top: 0;
+      right: 0;
+      font-size: 36px;
+      left: 200px;
+      border: none;
+      background-color: #ffffff;
+   }
+
+   .toggle
+   {
+     transition: margin-left .5s;
+     padding: 16px;
+   }
+   /*Side bar toggle*/  
+   
+}
+/*
+@media only screen and (max-width: 1125px)
+{
+  .img
+  {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+}
+*/

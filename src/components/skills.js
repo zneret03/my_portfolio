@@ -1,6 +1,9 @@
 import React from 'react';
 
-    const Skills = () =>
+
+class Skills extends React.Component
+{
+    render()
     {
         return(
             <div class="skills" id="skills">
@@ -70,5 +73,7 @@ import React from 'react';
             </div>
         );
     }
+}
+
 
 export default Skills;
