@@ -28,6 +28,9 @@ import React, {useState} from 'react';
                         <li class="nav-item mr-5">
                             <a href="#work" class="nav-link nav-link-color mr-5">MY WORK</a>
                         </li>
+                        <li class="nav-item mr-5">
+                            <a href="#contact" class="nav-link nav-link-color mr-5">CONTACT</a>
+                        </li>
                     </ul>
                 </div>
             </div>

@@ -29,22 +29,22 @@ const Nav = () =>
     return (
         <div>
             <div class="toggle">
-                <button class="openSideBar" onClick={openHandler}>☰</button>
+                <button className="openSideBar" onClick={openHandler}>☰</button>
             </div>
             {sidebar}
-            <nav class="mb-1 navbar navbar-expand-lg p-3">
-                <div class="collapse navbar-collapse" id="NavbarContent" >
-                    <ul class="navbar-nav nav">
-                        <li class="nav-item">
-                            <a href="#about" class="nav-link nav-link-color animated fadeInDown mr-5">ABOUT ME</a>
+            <nav className="mb-1 navbar navbar-expand-lg p-3" id="nav">
+                <div className="collapse navbar-collapse" id="NavbarContent" >
+                    <ul className="navbar-nav nav">
+                        <li className="nav-item">
+                            <a href="#about" className="nav-link nav-link-color animated fadeInDown mr-5">ABOUT ME</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#skills" class="nav-link nav-link-color animated fadeInDown mr-5">SKILLS</a>
+                            <a href="#skills" className="nav-link nav-link-color animated fadeInDown mr-5">SKILLS</a>
                         </li>
                         <li class="nav-item mr-5">
-                            <a href="#work" class="nav-link nav-link-color animated fadeInDown mr-5">MY WORK</a>
+                            <a href="#work" className="nav-link nav-link-color animated fadeInDown mr-5">MY WORK</a>
                         </li>
-                        <div class="line"></div>
+                        <div className="line"></div>
                     </ul>
                 </div>
             </nav>
