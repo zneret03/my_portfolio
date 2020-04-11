@@ -25,13 +25,15 @@ import './App.css';
   class App extends React.Component
   {
     render(){
+      
+      
         return(
           <div>
                 <Home />
                 <About />
                 <Skills />
                 <Work />
-                <Contact />
+                <Contact/>
                 <Footer />
             </div>
         );

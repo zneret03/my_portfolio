@@ -1,7 +1,7 @@
-import React from 'react'
+import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faAngleDoubleUp } from '@fortawesome/free-solid-svg-icons'
-import { faInstagram, faTwitter, faGithub, faFacebook } from '@fortawesome/free-brands-svg-icons'
+import { faAngleDoubleUp } from '@fortawesome/free-solid-svg-icons';
+import { faInstagram, faTwitter, faGithub, faFacebook } from '@fortawesome/free-brands-svg-icons';
 
 class Footer extends React.Component
 {

@@ -1,8 +1,7 @@
 import React, {useState} from 'react';
-             
+         
     const SideBar = (props) =>
     {
-
         const [sidebarclass, setSideBarClass] = useState(props.sidebar);
     
         const closeHandler = (e) =>{
@@ -14,7 +13,7 @@ import React, {useState} from 'react';
         return(
             <div>
                 <div className="sideBar">
-                    <button className={sidebarclass}  onClick={closeHandler}>×</button>
+                    <button className={sidebarclass} onClick={closeHandler}>×</button>
                     <ul class="navbar-nav nav"> 
                         <li class="nav-item">
                             <a href="#Home" class="nav-link nav-link-color mr-5">HOME</a>
