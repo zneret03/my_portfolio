@@ -1,7 +1,5 @@
 import React from 'react';
 import axios from 'axios';
-require("dotenv").config();
-
 
 class Contact extends React.Component
 {
@@ -35,29 +33,31 @@ class Contact extends React.Component
     }
 
     //Displaying outputs from inputs
-    eventSubmit = (event) => {
+    eventSubmit = async (event) => {
         
+        const params = new URLSearchParams();
+        params.append('email', this.state.email);
+        params.append('name', this.state.name);
+        params.append('message', this.state.message);
+        
+       let config = {
+        "Content-Type": "application/x-www-form-urlencoded"
+        }
+
         axios({
             method : "POST",
-            url: "http://localhost:3000/send",
-            data : {
-                from : "DrilonIan@yahoo.com",
-                to : this.state.email,
-                subject : this.state.email,
-                message : this.state.message
-            }
-        }).then((data) =>{
-            this.resetForm();
-            alert("Email has been sent" + data.response);
-        }).catch((error) => {
-            alert("Email error" + error.response);
+            headers: config,
+            url : "http://localhost:5000/api/sendMail",
+            data : params,
+        }).then((res) =>{
+            console.log("Email sent", res.response);
+            console.log("Email sent", res.response);
+        }).catch((err) => {
+            console.log("Email not sent", err.response);
         });
         
-
-        //alert(this.state.name + " " + this.state.email + " " + this.state.message);
-
         event.preventDefault();
-        //this.setState({value : this.state.value});
+
     }
 
     render()
@@ -69,7 +69,7 @@ class Contact extends React.Component
                     <div className="name-tag-line wow fadeInRight"></div>
                     <p className="wow fadeInRight">Have a question or want to work <span>together?</span></p>
                     <div className="container wow bounceIn">
-                        <form onSubmit={this.eventSubmit} method="POST">
+                        <form onSubmit={this.eventSubmit} action="/api/sendMail" method="POST">
                         <div className="row">
                             <div className="col-xs-12">
                                     <input type="text" 
@@ -77,6 +77,7 @@ class Contact extends React.Component
                                     value={this.state.value} 
                                     onChange={(event) => {this.eventChange(event)}} 
                                     placeholder="Name" 
+                                    required
                                     size="50"/>
                             </div>
                         </div>
@@ -88,6 +89,7 @@ class Contact extends React.Component
                                 value={this.state.value} 
                                 onChange={(event) => {this.eventChange(event)}} 
                                 placeholder="Email" 
+                                required
                                 size="50"/>
                             </div>
                         </div>
@@ -99,6 +101,7 @@ class Contact extends React.Component
                                 value={this.state.value} 
                                 onChange={(event) => {this.eventChange(event)}} 
                                 rows="7"  
+                                required
                                 placeholder="Your message. . .">
                                 </textarea>
                             </div>
