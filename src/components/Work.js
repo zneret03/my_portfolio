@@ -36,13 +36,13 @@ class Work extends React.Component
                             <div className="text">
                                 <h5>ReactJs/NodeJs</h5>
                                 <br/>
-                                <button type="button" class="btn btn-danger">Learn more</button>
+                                <button type="button" className="btn btn-danger">Learn more</button>
                             </div>
                         </div>
                     </div>
                 </div>
                 
-                <div class="flex-image wow fadeInUp" alt="second column image">
+                <div className="flex-image wow fadeInUp" alt="second column image">
                         <div className="flex">
                         <img className="img" src={require('./image/4.jpg')} alt="Img 4"/>
                         <div className="overlay">

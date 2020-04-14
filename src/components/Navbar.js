@@ -1,4 +1,3 @@
-//import React, { Component } from 'react'
 import React from 'react';
 import SideBar from './sideBar';
 
@@ -45,22 +44,22 @@ class Nav extends React.Component
 
         return (
             <div>
-                <div class="toggle">
+                <div className="toggle">
                     <button className="openSideBar" onClick={() => {this.openHandler()}}>☰</button>
                 </div>
                 {sidebar}
                 <nav className="mb-1 navbar navbar-expand-lg p-3" id="nav">
                     <div className="collapse navbar-collapse" id="NavbarContent" >
                         <ul className="navbar-nav nav">
-                            <li className="nav-item">
-                                <a href="#about" className="nav-link nav-link-color animated fadeInDown mr-5">ABOUT ME</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#skills" className="nav-link nav-link-color animated fadeInDown mr-5">SKILLS</a>
-                            </li>
-                            <li class="nav-item mr-5">
-                                <a href="#work" className="nav-link nav-link-color animated fadeInDown mr-5">MY WORK</a>
-                            </li>
+                                <li className="nav-item">
+                                    <a href="#about" className="nav-link nav-link-color animated fadeInDown mr-5">ABOUT ME</a>
+                                </li>
+                                <li className="nav-item">
+                                    <a href="#skills" className="nav-link nav-link-color animated fadeInDown mr-5">SKILLS</a>
+                                </li>
+                                <li className="nav-item mr-5">
+                                    <a href="#work" className="nav-link nav-link-color animated fadeInDown mr-5">MY WORK</a>
+                                </li>
                             <div className="line"></div>
                         </ul>
                     </div>

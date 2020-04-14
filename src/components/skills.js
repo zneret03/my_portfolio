@@ -6,65 +6,65 @@ class Skills extends React.Component
     render()
     {
         return(
-            <div class="skills" id="skills">
-                <h1 class="about font-weight-bold skills wow fadeInLeft">MY SKILLS</h1>
-                <div class="name-tag-line wow fadeInLeft"></div>
-                <div class="container">
+            <div className="skills" id="skills">
+                <h1 className="about font-weight-bold skills wow fadeInLeft">MY SKILLS</h1>
+                <div className="name-tag-line wow fadeInLeft"></div>
+                <div className="container">
                     <br/>
-                    <div class="row">
-                        <div class="col-lg-3 wow fadeInLeft">
-                                <div class="circle-wrap">
-                                    <div class="circle">
-                                        <div class="mask full">
-                                            <div class="fill-Html"></div>
+                    <div className="row">
+                        <div className="col-lg-3 wow fadeInLeft">
+                                <div className="circle-wrap">
+                                    <div className="circle">
+                                        <div className="mask full">
+                                            <div className="fill-Html"></div>
                                         </div>
-                                        <div class="mask half">
-                                            <div class="fill-Html"></div>
+                                        <div className="mask half">
+                                            <div className="fill-Html"></div>
                                         </div>
-                                        <div class="inside-circle"> 80%</div>
-                                        <h5 class="label"><span class="badge badge-danger">HTML</span></h5>
+                                        <div className="inside-circle"> 80%</div>
+                                        <h5 className="label"><span className="badge badge-danger">HTML</span></h5>
                                     </div>
                                 </div>
                         </div>
-                        <div class="col-lg-3 wow fadeInLeft">
-                                <div class="circle-wrap">
-                                    <div class="circle">
-                                        <div class="mask full">
-                                            <div class="fill-CSS"></div>
+                        <div className="col-lg-3 wow fadeInLeft">
+                                <div className="circle-wrap">
+                                    <div className="circle">
+                                        <div className="mask full">
+                                            <div className="fill-CSS"></div>
                                         </div>
-                                        <div class="mask half">
-                                            <div class="fill-CSS"></div>
+                                        <div className="mask half">
+                                            <div className="fill-CSS"></div>
                                         </div>
-                                        <div class="inside-circle">  80%</div>
-                                        <h5 class="label"><span class="badge badge-warning text-white">CSS</span></h5>
+                                        <div className="inside-circle">  80%</div>
+                                        <h5 className="label"><span className="badge badge-warning text-white">CSS</span></h5>
                                     </div>
                                 </div>
                         </div>
-                        <div class="col-lg-3 wow fadeInRight">
-                                <div class="circle-wrap">
-                                    <div class="circle">
-                                        <div class="mask full">
-                                            <div class="fill-React"></div>
+                        <div className="col-lg-3 wow fadeInRight">
+                                <div className="circle-wrap">
+                                    <div className="circle">
+                                        <div className="mask full">
+                                            <div className="fill-React"></div>
                                         </div>
-                                        <div class="mask half">
-                                            <div class="fill-React"></div>
+                                        <div className="mask half">
+                                            <div className="fill-React"></div>
                                         </div>
-                                        <div class="inside-circle"> 70%</div>
-                                        <h5 class="label"><span class="badge badge-primary">REACT</span></h5>
+                                        <div className="inside-circle"> 70%</div>
+                                        <h5 className="label"><span className="badge badge-primary">REACT</span></h5>
                                     </div>
                                 </div>
                         </div>
-                        <div class="col-lg-3 wow fadeInRight">
-                                <div class="circle-wrap">
-                                    <div class="circle">
-                                        <div class="mask full">
-                                            <div class="fill-Nodejs"></div>
+                        <div className="col-lg-3 wow fadeInRight">
+                                <div className="circle-wrap">
+                                    <div className="circle">
+                                        <div className="mask full">
+                                            <div className="fill-Nodejs"></div>
                                         </div>
-                                        <div class="mask half">
-                                            <div class="fill-Nodejs"></div>
+                                        <div className="mask half">
+                                            <div className="fill-Nodejs"></div>
                                         </div>
-                                        <div class="inside-circle"> 70%</div>
-                                        <h5 class="label"><span class="badge badge-success text-white">NODE</span></h5>
+                                        <div className="inside-circle"> 70%</div>
+                                        <h5 className="label"><span className="badge badge-success text-white">NODE</span></h5>
                                     </div>
                                 </div>
                         </div>
