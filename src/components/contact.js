@@ -34,7 +34,6 @@ class Contact extends React.Component
 
     //Displaying outputs from inputs
     eventSubmit = async (event) => {
-        
         const params = new URLSearchParams();
         params.append('email', this.state.email);
         params.append('name', this.state.name);
