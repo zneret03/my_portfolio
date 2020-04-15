@@ -1,34 +1,32 @@
-const nodeMailer = require("nodemailer");
-const mailgun = require('nodemailer-mailgun-transport');
+const nodeMailer = require('nodemailer');
+const { message } = require('./message');
 require("dotenv").config();
 
-    const sendMail = (name, email, message, callBack) =>
+    const sendMail = (name, email, callBack) =>
     {
+        const transport = nodeMailer.createTransport({
+            service : "Gmail",
+            auth:{
+                user : process.env.EMAIL,
+                pass:  process.env.PASSWORD
+            }
+        });
         
-        const auth = {
-            auth: {
-                api_key: process.env.api_key,
-                domain: process.env.domain
-            }   
-        }
-         
-        const transport = nodeMailer.createTransport(mailgun(auth));
-        
-        const mailOption = {
-            from: email,
-            to : 'DrilonIan@yahoo.com',
-            subject: name,
-            text :  message
-        }
+       const mailOption = {
+            from: 'iandrilon2@gmail.com',
+            to : email,
+            subject:`Hello ${name}`,
+            html : message()
+        };
 
-        transport.sendMail(mailOption, (err, data) => {
+       transport.sendMail(mailOption, (err, data) => {
             if(err){
-                callBack(err.response, null);
+                callBack(null, err.response);
             }
             else{
-                callBack(null, data.response);                                                              
+                callBack(data.response, null);
             }
-        })
+       });
     } 
 
 module.exports = { sendMail };

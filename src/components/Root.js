@@ -10,15 +10,16 @@ class Root extends React.Component
 {
     render()
     {
-        return(
-        <div>
-            <Home />
-            <About />
-            <Skills />
-            <Work />
-            <Contact/>
-        </div>
-    );
+            return(
+            <div>
+                <Home />
+                <About />
+                <Skills />
+                <Work />
+                <Contact/>
+                <Footer />
+            </div>
+        );
     }
 }
 

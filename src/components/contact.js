@@ -34,11 +34,13 @@ class Contact extends React.Component
 
     //Displaying outputs from inputs
     eventSubmit = async (event) => {
+
         const params = new URLSearchParams();
         params.append('email', this.state.email);
         params.append('name', this.state.name);
         params.append('message', this.state.message);
         
+        //to make Cross origin request 
        let config = {
         "Content-Type": "application/x-www-form-urlencoded"
         }
@@ -56,12 +58,10 @@ class Contact extends React.Component
         });
         
         event.preventDefault();
-
     }
 
     render()
     {
-
         return(
             <div className="contact" id="contact">
                     <h1 className="about font-weight-bold wow fadeInRight">CONTACT</h1>
