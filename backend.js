@@ -13,7 +13,7 @@ app.post("/api/sendMail",  (req, res) => {
             console.log(res.status(500).json({message : "Internal error"}));
         }
         else{
-            console.log(res.status(200).json({message : "Email sent properly"}));
+            console.log(res.json({message : "Email sent properly"}));
         }
     });
 });

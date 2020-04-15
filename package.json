@@ -23,6 +23,7 @@
   },
   "scripts": {
     "start": "node backend.js",
+    "build": "react-scripts build",
     "backend": "nodemon backend.js",
     "frontend": "npm run front --prefix my-portfolio",
     "dev": "concurrently \"npm run backend\" \"react-scripts start --prefix my-portfolio\""
