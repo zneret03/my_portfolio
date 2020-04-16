@@ -10,8 +10,8 @@ class Contact extends React.Component
         //using state to receive inputs
         this.state = { 
             name: '',
-            email: '',
-            message: ''
+            email: ''
+            //message: ''
         }
         
         this.eventChange = this.eventChange.bind(this);
@@ -23,13 +23,14 @@ class Contact extends React.Component
         this.setState({
             [event.target.name] : event.target.value,
             [event.target.email] : event.target.value,
-            [event.target.message] : event.target.value
+            //[event.target.message] : event.target.value
         });
     }
 
-    resetForm = () =>
-    {
-        this.componentDidMount();
+     contactDialogConfirm = () =>{
+        setTimeout(() =>{
+            alert("Email sent successfully");
+        }, 1000);
     }
 
     //Displaying outputs from inputs
@@ -38,23 +39,22 @@ class Contact extends React.Component
         const params = new URLSearchParams();
         params.append('email', this.state.email);
         params.append('name', this.state.name);
-        params.append('message', this.state.message);
+        //params.append('message', this.state.message);
         
         //to make Cross origin request 
        let config = {
         "Content-Type": "application/x-www-form-urlencoded"
         }
-
+        
         axios({
             method : "POST",
             headers: config,
             url : "http://localhost:5000/api/sendMail",
             data : params,
-        }).then((res) =>{
-            console.log("Email sent", res.response);
-            console.log("Email sent", res.response);
-        }).catch((err) => {
-            console.log("Email not sent", err.response);
+        }).then(() =>{
+            this.contactDialogConfirm();
+        }).catch(() => {
+            this.contactDialogConfirm();
         });
         
         event.preventDefault();
@@ -92,7 +92,7 @@ class Contact extends React.Component
                                 size="50"/>
                             </div>
                         </div>
-
+                        
                         <div className="row">
                             <div className="col-xs-12 mt-1">
                                 <textarea name="message" 

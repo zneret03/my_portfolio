@@ -7,6 +7,7 @@ app.use(express.urlencoded({extended: true}));
 app.use(express.json());
 app.use(cookieParser());
 
+
 app.post("/api/sendMail",  (req, res) => {
     sendMail(req.body.name, req.body.email, (err, data) =>
     {
