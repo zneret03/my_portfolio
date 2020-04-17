@@ -18,7 +18,7 @@ class Root extends React.Component
                 <Skills />
                 <Work />
                 <Contact/>
-                <Footer />
+      
             </div>
         );
     }

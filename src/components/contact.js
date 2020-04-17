@@ -71,7 +71,7 @@ class Contact extends React.Component
         axios({
             method : "POST",
             headers: config,
-            url : "https://awesome-kirch-9de356/api/sendMail",
+            url : "http://localhost:5000/api/sendMail",
             data : params,
         }).then(() =>{
             this.contactDialogConfirm();
@@ -84,7 +84,6 @@ class Contact extends React.Component
 
     render()
     {
-        
         return(
             <div className="contact" id="contact">
                     <h1 className="about font-weight-bold wow fadeInRight">CONTACT</h1>
