@@ -1,6 +1,6 @@
 import React from 'react';
 import axios from 'axios';
-
+import swal from 'sweetalert2';
 class Contact extends React.Component
 {
 
@@ -10,7 +10,8 @@ class Contact extends React.Component
         //using state to receive inputs
         this.state = { 
             name: '',
-            email: ''
+            email: '',
+            spinner : false
             //message: ''
         }
         
@@ -22,15 +23,34 @@ class Contact extends React.Component
     eventChange = (event)=>{
         this.setState({
             [event.target.name] : event.target.value,
-            [event.target.email] : event.target.value,
+            [event.target.email] : event.target.value
             //[event.target.message] : event.target.value
         });
     }
-
+    
+    //Prompt dialog box to confirm that email is already been
      contactDialogConfirm = () =>{
         setTimeout(() =>{
-            alert("Email sent successfully");
+            swal.fire({
+                position: 'center',
+                icon : 'success',
+                title : 'Please check your email',
+                showConfirmButton : true,
+                timer: 2000
+            });
+            
+            this.setState({
+                spinner: false
+            });  
         }, 1000);
+    }
+
+    //loadSpinner
+    loadSpinner = () =>
+    {
+        this.setState({
+            spinner : true
+        });
     }
 
     //Displaying outputs from inputs
@@ -46,6 +66,8 @@ class Contact extends React.Component
         "Content-Type": "application/x-www-form-urlencoded"
         }
         
+        this.loadSpinner()
+        
         axios({
             method : "POST",
             headers: config,
@@ -56,12 +78,13 @@ class Contact extends React.Component
         }).catch(() => {
             this.contactDialogConfirm();
         });
-        
+         
         event.preventDefault();
     }
 
     render()
     {
+        
         return(
             <div className="contact" id="contact">
                     <h1 className="about font-weight-bold wow fadeInRight">CONTACT</h1>
@@ -80,7 +103,6 @@ class Contact extends React.Component
                                     size="50"/>
                             </div>
                         </div>
-
                         <div className="row">
                             <div className="col-xs-12 mt-1">
                                 <input type="text" 
@@ -92,7 +114,6 @@ class Contact extends React.Component
                                 size="50"/>
                             </div>
                         </div>
-                        
                         <div className="row">
                             <div className="col-xs-12 mt-1">
                                 <textarea name="message" 
@@ -101,11 +122,15 @@ class Contact extends React.Component
                                 onChange={(event) => {this.eventChange(event)}} 
                                 rows="7"  
                                 required
-                                placeholder="Your message. . .">
+                                placeholder="Your message. . ."> 
                                 </textarea>
                             </div>
                         </div>
-                        <button type="type" className="btn-contact">SUMBIT</button>
+                        <button type="submit" name="btnSubmit" className="btn-contact" disabled={this.state.spinner}>
+                            {this.state.spinner &&  <i className="spinner-border spinner-border-sm text-danger"></i>}
+                            {this.state.spinner &&  <span className="text-secondary"></span>}
+                            {!this.state.spinner &&  <span className="text-secondary">SUBMIT</span>}
+                            </button>
                     </form>
                     </div>
                     

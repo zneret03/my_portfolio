@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import AnchorLink from 'react-anchor-link-smooth-scroll';
          
     const SideBar = (props) =>
     {
@@ -14,21 +15,21 @@ import React, {useState} from 'react';
             <div>
                 <div className="sideBar">
                     <button className={sidebarclass} onClick={closeHandler}>×</button>
-                    <ul class="navbar-nav nav"> 
-                        <li class="nav-item">
-                            <a href="#Home" class="nav-link nav-link-color mr-5">HOME</a>
+                    <ul className="navbar-nav nav"> 
+                        <li className="nav-item">
+                            <AnchorLink href="#Home" className="nav-link nav-link-color mr-5">HOME</AnchorLink>
                         </li>
-                        <li class="nav-item">
-                            <a href="#about" class="nav-link nav-link-color mr-5">ABOUT ME</a>
+                        <li className="nav-item">
+                            <AnchorLink href="#about" className="nav-link nav-link-color mr-5">ABOUT ME</AnchorLink>
                         </li>
-                        <li class="nav-item">
-                            <a href="#skills" class="nav-link nav-link-colormr-5">SKILLS</a>
+                        <li className="nav-item">
+                            <AnchorLink href="#skills" className="nav-link nav-link-colormr-5">SKILLS</AnchorLink>
                         </li>
-                        <li class="nav-item mr-5">
-                            <a href="#work" class="nav-link nav-link-color mr-5">MY WORK</a>
+                        <li className="nav-item mr-5">
+                            <AnchorLink href="#work" className="nav-link nav-link-color mr-5">MY WORK</AnchorLink>
                         </li>
-                        <li class="nav-item mr-5">
-                            <a href="#contact" class="nav-link nav-link-color mr-5">CONTACT</a>
+                        <li className="nav-item mr-5">
+                            <AnchorLink href="#contact" className="nav-link nav-link-color mr-5">CONTACT</AnchorLink>
                         </li>
                     </ul>
                 </div>

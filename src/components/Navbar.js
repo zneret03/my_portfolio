@@ -1,5 +1,6 @@
 import React from 'react';
 import SideBar from './sideBar';
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 class Nav extends React.Component
 {
@@ -16,20 +17,20 @@ class Nav extends React.Component
         if(!this.state.open){
             //setOpenSideBar(true);
             this.setState({
-                open : this.setState.open = true
+                open : true
             });
         }
         else{
             //setOpenSideBar(false);
             this.setState({
-                open : this.setState.open = false
+                open : false
             });
         }
     }
 
      closeSideBar = () =>{
          this.setState({
-            open: this.setState.open = false
+            open:  false
          });
     }
 
@@ -52,13 +53,16 @@ class Nav extends React.Component
                     <div className="collapse navbar-collapse" id="NavbarContent" >
                         <ul className="navbar-nav nav">
                                 <li className="nav-item">
-                                    <a href="#about" className="nav-link nav-link-color animated fadeInDown mr-5">ABOUT ME</a>
+                                    <AnchorLink href="#about" 
+                                    className="nav-link nav-link-color
+                                     animated fadeInDown mr-5"
+                                     >ABOUT ME</AnchorLink>
                                 </li>
                                 <li className="nav-item">
-                                    <a href="#skills" className="nav-link nav-link-color animated fadeInDown mr-5">SKILLS</a>
+                                    <AnchorLink href="#skills" className="nav-link nav-link-color animated fadeInDown mr-5">SKILLS</AnchorLink>
                                 </li>
                                 <li className="nav-item mr-5">
-                                    <a href="#work" className="nav-link nav-link-color animated fadeInDown mr-5">MY WORK</a>
+                                    <AnchorLink href="#work" className="nav-link nav-link-color animated fadeInDown mr-5">MY WORK</AnchorLink>
                                 </li>
                             <div className="line"></div>
                         </ul>

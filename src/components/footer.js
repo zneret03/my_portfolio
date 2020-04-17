@@ -2,6 +2,8 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleDoubleUp } from '@fortawesome/free-solid-svg-icons';
 import { faInstagram, faTwitter, faGithub, faFacebook } from '@fortawesome/free-brands-svg-icons';
+import AnchorLink from 'react-anchor-link-smooth-scroll';
+
 
 class Footer extends React.Component
 {
@@ -17,10 +19,10 @@ class Footer extends React.Component
             <div className="footer">   
                 <footer className="page-footer font-small footer footer-color">
                     <div className="footer-copyright text-center py-3">
-                    <div className="container">
+                    <div className="container-fluid">
                         <div className="row">
                             <div className="col-md-12 py-5">
-                            <a href="#nav" className="btn-up">{arrowUp}</a>
+                            <AnchorLink href="#nav" className="btn-up">{arrowUp}</AnchorLink>
                                 <div className="mb-5 text-center"> 
                                     <a href="https://www.instagram.com/ian.drilon.7/" className="mr-5"><i>{instagram}</i></a>
                                     <a href="https://twitter.com/DrilonIan" className="mr-5"><i>{twitter}</i></a>

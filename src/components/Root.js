@@ -10,9 +10,10 @@ class Root extends React.Component
 {
     render()
     {
+        const alt = "Image";
             return(
             <div>
-                <Home />
+                <Home  Image={alt}/>
                 <About />
                 <Skills />
                 <Work />

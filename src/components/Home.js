@@ -1,17 +1,16 @@
 import React from "react";
 import Nav from './Navbar';
-
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 class Home extends React.Component
 {
   render(){
-
     return(
       <div>
           <div className="container" id="landingPage">
             <div className="row">
               <div className="col-lg-6">
-                  <Nav />
+                <Nav/>
                   <div className="mt-5 main-info-section  animated fadeInDown" id="Home">
                   <h1>
                     <span className="font-weight-bold hvr-grow">H</span>
@@ -50,15 +49,16 @@ class Home extends React.Component
                 </div> 
                 <div className="col-lg-6">
                 <div className="right">
-                  <img className="animated fadeIn" src={require('./image/split.jpg')} alt=""/>
+                 <img className="animated fadeIn" src={require('./image/split.jpg')} alt={this.props.Image}/>
                 </div>
                 </div>
               </div> 
-              <a href="#contact" className="btn-contact animated fadeInLeft">Contact me</a>
+              <AnchorLink href="#contact" className="btn-contact animated fadeInLeft">Contact me</AnchorLink>
            </div>
            </div>
   );
   }
+  
 }
 
 

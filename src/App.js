@@ -3,9 +3,6 @@ import WOW from 'wowjs';
 import './App.css';
 import { Router } from "@reach/router";
 import Root from './components/Root';
-
-
-  document.body.style = "scroll-behavior: smooth;";
   
   window.wow = new WOW.WOW({
       offset : '80',
