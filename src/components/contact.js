@@ -71,7 +71,7 @@ class Contact extends React.Component
         axios({
             method : "POST",
             headers: config,
-            url : "http://localhost:5000/api/sendMail",
+            url : "https://awesome-kirch-9de356/api/sendMail",
             data : params,
         }).then(() =>{
             this.contactDialogConfirm();
