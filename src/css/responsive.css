@@ -1,10 +1,11 @@
-@media only screen and (max-width: 990px)
+@media only screen and (mix-width: 900px)
 {
   .footer
   {
     position: relative;
     top: 40em;
   }
+
 
   .right img
   {
@@ -15,6 +16,7 @@
   {
     display: none;
   }
+
 
   /*Work module*/
   .flex
@@ -133,9 +135,6 @@
    }
    /*Side bar toggle*/  
 
-
-
-
    /*Contacts*/
   .contact
   {
@@ -167,7 +166,7 @@
   {
     position: relative;
     top: 10em;
-    width: 480px;
+    width: 314px;
     border: none;
     -webkit-max-logical-width: 477px;
     background-color: rgb(243, 240, 240);
@@ -178,7 +177,7 @@
   {
     position: absolute;
     z-index: 1;
-    margin: 34em 8.8em 5em;
+    margin: 36em 3.5em 5em;
     padding: 9px 35px 9px;
   }
 

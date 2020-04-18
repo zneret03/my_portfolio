@@ -95,6 +95,7 @@ class Contact extends React.Component
                             <div className="col-xs-12">
                                     <input type="text" 
                                     name="name" 
+                                    className="form-control"
                                     value={this.state.value} 
                                     onChange={(event) => {this.eventChange(event)}} 
                                     placeholder="Name" 
@@ -106,6 +107,7 @@ class Contact extends React.Component
                             <div className="col-xs-12 mt-1">
                                 <input type="text" 
                                 name="email" 
+                                className="form-control"
                                 value={this.state.value} 
                                 onChange={(event) => {this.eventChange(event)}} 
                                 placeholder="Email" 
@@ -117,6 +119,7 @@ class Contact extends React.Component
                             <div className="col-xs-12 mt-1">
                                 <textarea name="message" 
                                 cols="30" 
+                                className="form-control"
                                 value={this.state.value} 
                                 onChange={(event) => {this.eventChange(event)}} 
                                 rows="7"  
