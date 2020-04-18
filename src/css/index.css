@@ -18,6 +18,7 @@ code {
   margin-bottom: 14.1em;
 }
 
+
 #landingPage a{
   text-decoration: none;
 }
@@ -271,9 +272,9 @@ nav a:hover
 .about-me img
 {
   position: relative;
-  z-index: 1;
   top: 60px;
   right: 6em;
+  z-index: 1;
   float: right;
   transform: translateX(50%);
   width: 30%;
