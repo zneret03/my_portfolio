@@ -295,14 +295,14 @@ nav a:hover
 {
   position: relative;
   top: 9em;
-  height: 95vh;
-  width: 95vh;
+  height: 600px;
+  width: 600px;
 }
 
 .right img
 {
-  height: 100vh;
-  width: 109vh;
+  height:  1000px;
+  width: 662px;
   -webkit-max-logical-width: 103.5vh;
 }
 
