@@ -11,8 +11,9 @@ class Contact extends React.Component
         this.state = { 
             name: '',
             email: '',
+            message: '',
             spinner : false
-            //message: ''
+
         }
         
         this.eventChange = this.eventChange.bind(this);
@@ -37,6 +38,15 @@ class Contact extends React.Component
                 title : 'Please check your email',
                 showConfirmButton : true,
                 timer: 2000
+            }).then((success) =>{
+                if(success)
+                {
+                    this.setState({
+                        name : '',
+                        email : '',
+                        message : ''
+                    });
+                }
             });
             
             this.setState({
@@ -55,7 +65,7 @@ class Contact extends React.Component
 
     //Displaying outputs from inputs
     eventSubmit = async (event) => {
-
+        event.preventDefault();
         const params = new URLSearchParams();
         params.append('email', this.state.email);
         params.append('name', this.state.name);
@@ -76,10 +86,8 @@ class Contact extends React.Component
         }).then(() =>{
             this.contactDialogConfirm();
         }).catch(() => {
-            this.contactDialogConfirm();
+            this.contactDialogConfirm();             
         });
-         
-        event.preventDefault();
     }
 
     render()
@@ -96,7 +104,7 @@ class Contact extends React.Component
                                     <input type="text" 
                                     name="name" 
                                     className="form-control"
-                                    value={this.state.value} 
+                                    value={this.state.name} 
                                     onChange={(event) => {this.eventChange(event)}} 
                                     placeholder="Name" 
                                     required
@@ -108,7 +116,7 @@ class Contact extends React.Component
                                 <input type="text" 
                                 name="email" 
                                 className="form-control"
-                                value={this.state.value} 
+                                value={this.state.email} 
                                 onChange={(event) => {this.eventChange(event)}} 
                                 placeholder="Email" 
                                 required
@@ -121,7 +129,7 @@ class Contact extends React.Component
                                     <textarea name="message" 
                                     cols="51" 
                                     className="form-control"
-                                    value={this.state.value} 
+                                    value={this.state.message} 
                                     onChange={(event) => {this.eventChange(event)}} 
                                     rows="7"  
                                     required
