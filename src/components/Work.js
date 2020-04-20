@@ -24,7 +24,7 @@ class Work extends React.Component
                         <img className="img" src={require('./image/2.jpg')} alt="Img 2"/>
                         <div className="overlay">
                             <div className="text">
-                                <h5>Js/PHP</h5>
+                                <h5>ReactJs/NodeJs</h5>
                                 <br/>
                                 <button type="button" className="btn btn-danger">Learn more</button>
                             </div>

@@ -1,11 +1,31 @@
 @media all and (min-width: 320px) and (max-width: 480px)
 {
+  .about-me h1
+  {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    margin: 0px;
+  }
+
+
+  .about-me h1:nth-child(2)
+  {
+    padding: 0 0 20px;
+  }
+
+  .about-me p
+  {
+    color: #ACACAC;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
+    padding: 0px;
+  }
+
   .footer
   {
     position: relative;
-    top: 40em;
+    top: 33em;
   }
-
 
   .right img
   {
@@ -138,7 +158,7 @@
   .contact
   {
     position: relative;
-    top: 55em;
+    top: 35em;
     text-align: center;
   }
 
