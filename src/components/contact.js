@@ -116,23 +116,25 @@ class Contact extends React.Component
                             </div>
                         </div>
                         <div className="row">
-                            <div className="col-xs-12 mt-1">
-                                <textarea name="message" 
-                                cols="30" 
-                                className="form-control"
-                                value={this.state.value} 
-                                onChange={(event) => {this.eventChange(event)}} 
-                                rows="7"  
-                                required
-                                placeholder="Your message. . ."> 
-                                </textarea>
+                            <div className="form-group">
+                                <div className="col-xs-12 mt-1">
+                                    <textarea name="message" 
+                                    cols="51" 
+                                    className="form-control"
+                                    value={this.state.value} 
+                                    onChange={(event) => {this.eventChange(event)}} 
+                                    rows="7"  
+                                    required
+                                    placeholder="Your message. . ."> 
+                                    </textarea>
+                                    <button type="submit" name="btnSubmit" className="btn-contact" disabled={this.state.spinner}>
+                                    {this.state.spinner &&  <i className="spinner-border spinner-border-sm text-danger"></i>}
+                                    {this.state.spinner &&  <span className="text-secondary"></span>}
+                                    {!this.state.spinner &&  <span className="text-secondary">SUBMIT</span>}
+                                    </button>
+                                </div>
                             </div>
                         </div>
-                        <button type="submit" name="btnSubmit" className="btn-contact" disabled={this.state.spinner}>
-                            {this.state.spinner &&  <i className="spinner-border spinner-border-sm text-danger"></i>}
-                            {this.state.spinner &&  <span className="text-secondary"></span>}
-                            {!this.state.spinner &&  <span className="text-secondary">SUBMIT</span>}
-                            </button>
                     </form>
                     </div>
                     

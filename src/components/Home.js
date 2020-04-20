@@ -48,14 +48,14 @@ class Home extends React.Component
                 </div>
                 </div> 
                 <div className="col-lg-6">
-                  <div className="right">
-                  <img className="animated fadeIn" src={require('./image/mountain.jpg')} alt={this.props.Image}/>
-                  </div>
+                <div className="right">
+                 <img className="animated fadeIn" src={require('./image/mountain.jpg')} alt={this.props.Image}/>
+                </div>
                 </div>
               </div> 
               <AnchorLink href="#contact" className="btn-contact animated fadeInLeft">Contact me</AnchorLink>
            </div>
-          </div>
+           </div>
   );
   }
   

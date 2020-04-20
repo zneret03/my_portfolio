@@ -24,10 +24,10 @@ class Footer extends React.Component
                             <div className="col-md-12 py-5">
                             <AnchorLink href="#nav" className="btn-up">{arrowUp}</AnchorLink>
                                 <div className="mb-5 text-center"> 
-                                    <a href="https://www.instagram.com/ian.drilon.7/" className="mr-5"><i>{instagram}</i></a>
-                                    <a href="https://twitter.com/DrilonIan" className="mr-5"><i>{twitter}</i></a>
-                                    <a href="https://github.com/zneret03" className="mr-5"><i>{github}</i></a>
-                                    <a href="https://www.facebook.com/ian.drilon.7"><i>{facebook}</i></a>
+                                    <a href="https://www.instagram.com/ian.drilon.7/" className="mr-md-5 ml-md-5 mr-3"><i>{instagram}</i></a>
+                                    <a href="https://twitter.com/DrilonIan" className="mr-md-5 ml-md-5 mr-3"><i>{twitter}</i></a>
+                                    <a href="https://github.com/zneret03" className="mr-md-5 ml-md-5 mr-3"><i>{github}</i></a>
+                                    <a href="https://www.facebook.com/ian.drilon.7" className="mr-md-5 ml-md-5 mr-3"><i>{facebook}</i></a>
                                 </div>
                                 <div className="text-secondary">
                                     <p>IAN ADORABLE DRILON <span>©2020</span></p>

@@ -141,10 +141,16 @@ nav a:hover
   padding: 8px;
 }
 
+textarea
+{
+  max-width: 100%;
+}
+
 .contact button
 {
   position: absolute;
   z-index: 1;
+  right: 20rem;
   margin: 34em 8.8em 5em;
   padding: 9px 35px 9px;
 }
@@ -296,14 +302,16 @@ nav a:hover
   position: relative;
   top: 9em;
   height: 600px;
+  -webkit-max-logical-height: 650px;
   width: 600px;
 }
 
+
 .right img
 {
-  height:  1000px;
+  height: auto;
   width: 662px;
-  -webkit-max-logical-width: 103.5vh;
+  -webkit-max-logical-width:  103.5vh;
 }
 
 .left img

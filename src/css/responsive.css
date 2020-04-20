@@ -1,4 +1,4 @@
-@media only screen and (mix-width: 900px)
+@media all and (min-width: 320px) and (max-width: 480px)
 {
   .footer
   {
@@ -166,7 +166,7 @@
   {
     position: relative;
     top: 10em;
-    width: 314px;
+    width: 100%;
     border: none;
     -webkit-max-logical-width: 477px;
     background-color: rgb(243, 240, 240);
@@ -177,8 +177,10 @@
   {
     position: absolute;
     z-index: 1;
-    margin: 36em 3.5em 5em;
-    padding: 9px 35px 9px;
+    top: 44em;
+    right: 0em;
+    margin: 0.4em auto;
+    padding: 9px auto 9px;
   }
 
   .contact p
@@ -200,4 +202,32 @@
     top: 10em;
   }
   /*Contacts*/
+}
+
+@media all and (min-width: 1025px) and (max-width: 1280)
+{
+  #about
+  {
+    position: relative;
+    background-color: rgb(250, 250, 250);
+    -webkit-margin-before: 15.5em;
+    width: 100%;  
+    margin: 0 auto;
+    top: 2em;
+  }
+
+  .right
+  {
+    width: 665px;
+    height: auto;
+    -webkit-max-logical-width: 100%;
+    -webkit-max-logical-height: auto;
+  }
+
+  .right img
+  {
+    height: auto;
+    max-width: 100%;
+    -webkit-max-logical-width: 100%;
+  }
 }
