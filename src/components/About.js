@@ -16,8 +16,8 @@ class About_me extends React.Component
               </div>
               <div className="col-lg-6">
               <div className="about-me wow fadeInRight">
-                <h1 className="font-weight-bold hi">Hi!</h1>
-                <h1 className="font-weight-bold hi"> I'm Ian.</h1>
+                <h1 className="font-weight-bold">Hi!</h1>
+                <h1 className="font-weight-bold"> I'm Ian.</h1>
                 <p>I'm a student of Iloilo Science and Technology University Enjoying taking complex problem
                   and turning into beautiful functional and interface design. I also love logic and structure of coding
                   and always strive to write and elegant and self documented code. For me code is like an art that
@@ -28,7 +28,7 @@ class About_me extends React.Component
               </div>
               </div>
             </div>
-       </div>
+          </div>
         </div>
   );
   }

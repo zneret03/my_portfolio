@@ -17,7 +17,6 @@
     display: none;
   }
 
-
   /*Work module*/
   .flex
   {
@@ -204,7 +203,7 @@
   /*Contacts*/
 }
 
-@media all and (min-width: 1025px) and (max-width: 1280)
+@media all and (min-width: 1025px) and (max-width: 1280px)
 {
   #about
   {
@@ -229,5 +228,150 @@
     height: auto;
     max-width: 100%;
     -webkit-max-logical-width: 100%;
+  }
+}
+
+@media all and (min-width: 768px) and (orientation: portrait)
+{
+   /*Side bar toggle*/
+ .openSideBar
+ {
+   position: fixed;
+   border: transparent;
+   background-color: transparent;
+   display: inline;
+   font-size: 30px;
+   z-index: 1;
+ }
+
+
+  .sideBar
+  {
+    height: 100vh;
+    width: 300px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: -100%;
+    background-color: #ffffff;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    animation: slide-open 0.6s forwards;
+    display: block;
+  }
+
+  @keyframes slide-open {
+    100%{
+      left: 0;
+    }
+  }
+
+  .sideBar a
+   {
+     padding: 8px 8px 8px 8px;
+     text-decoration: none;
+     font-size: 25px;
+     color: #212529;
+     display: block;
+     transform: 0.3s;      
+     margin: 0 2em 0;                                              
+   }     
+
+
+   .sideBar .closebtn
+   {
+      position: absolute;
+      top: 0;
+      right: 0;
+      font-size: 36px;
+      left: 200px;
+      border: none;
+      background-color: #ffffff;
+   }
+
+   .toggle
+   {
+     transition: margin-left .5s;
+     padding: 16px;
+   }
+   /*Side bar toggle*/  
+
+  .right img
+  {
+    display: none;
+  }
+
+  .img-about  
+  {
+    display: none;
+  }
+
+  .contact input[type=text], input[type=email], textarea
+  {
+    left: 8em;
+  }
+
+  .contact button
+  {
+    position: absolute;
+    z-index: 1;
+    top: 44em;
+    right: 11em;
+    margin: 0.4em auto;
+    padding: 9px auto 9px;
+  }
+
+  .about-me h1
+  {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    margin: 0 30px 0;
+  }
+} 
+
+@media all and (min-width: 1024px) and (orientation: portrait)
+{
+  .right img
+  {
+    display: none;
+  }
+
+  .img-about  
+  {
+    display: none;
+  }
+  
+  .about-me
+  {
+    position: relative;
+    top: 10em;
+    box-shadow: 0 0 1.5em rgba(80, 79, 79, 0.1);
+    padding: 50px 50px 50px;
+    -webkit-padding-end: 50px;
+    -webkit-padding-start: 60px;
+    -webkit-padding-before: 80px;
+    margin-bottom: 16em;
+  }
+
+  .about-me h1
+  {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    margin: 0 30px 0;
+  }
+
+
+  .about-me h1:nth-child(2)
+  {
+    padding: 0 0 20px;
+  }
+
+  .about-me p
+  {
+    color: #ACACAC;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    padding: 0px auto 0px;
   }
 }
