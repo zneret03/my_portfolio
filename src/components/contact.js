@@ -3,6 +3,7 @@ import axios from 'axios';
 import swal from 'sweetalert2';
 class Contact extends React.Component
 {
+
     constructor()
     {
         super();
@@ -71,26 +72,24 @@ class Contact extends React.Component
         //params.append('message', this.state.message);
         
         //to make Cross origin request 
-        /*
        let config = {
         "Content-Type": "application/x-www-form-urlencoded"
         }
-        */
         
         this.loadSpinner()
         
         axios({
             method : "POST",
-            url : "https://stoic-mcnulty-f823b9.netlify.app/api/sendMail",
+            headers: config,
+            url : "http://localhost:5000/api/sendMail",
             data : params,
-        }).then((response) =>{
+        }).then(() =>{
             this.contactDialogConfirm();
-            console.log(response.data);
-        }).catch((error) => {
-            console.log(error);
+        }).catch(() => {
             this.contactDialogConfirm();             
         });
     }
+
     render()
     {
         return(
