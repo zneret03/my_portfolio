@@ -3,7 +3,6 @@ import axios from 'axios';
 import swal from 'sweetalert2';
 class Contact extends React.Component
 {
-
     constructor()
     {
         super();
@@ -83,13 +82,14 @@ class Contact extends React.Component
             headers: config,
             url : "https://stoic-mcnulty-f823b9.netlify.app/api/sendMail",
             data : params,
-        }).then(() =>{
+        }).then((response) =>{
             this.contactDialogConfirm();
-        }).catch(() => {
+            console.log(response.data);
+        }).catch((error) => {
+            console.log(error);
             this.contactDialogConfirm();             
         });
     }
-
     render()
     {
         return(
