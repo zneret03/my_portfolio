@@ -80,7 +80,7 @@ class Contact extends React.Component
         axios({
             method : "POST",
             headers: config,
-            url : "/api/sendMail",
+            url : "https://stoic-mcnulty-f823b9.netlify.app/api/sendMail",
             data : params,
         }).then((response) =>{
             this.contactDialogConfirm();
