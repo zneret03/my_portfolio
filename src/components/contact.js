@@ -71,15 +71,16 @@ class Contact extends React.Component
         //params.append('message', this.state.message);
         
         //to make Cross origin request 
+        /*
        let config = {
         "Content-Type": "application/x-www-form-urlencoded"
         }
+        */
         
         this.loadSpinner()
         
         axios({
             method : "POST",
-            headers: config,
             url : "https://stoic-mcnulty-f823b9.netlify.app/api/sendMail",
             data : params,
         }).then((response) =>{
