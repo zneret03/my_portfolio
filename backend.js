@@ -3,8 +3,12 @@ const cookieParser = require('cookie-parser');
 const { sendMail } = require('./mail');
 
 const app = express();
+
+//to get body request
 app.use(express.urlencoded({extended: true}));
 app.use(express.json());
+
+//middle ware
 app.use(cookieParser());
 
 
