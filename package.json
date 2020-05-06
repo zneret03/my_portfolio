@@ -24,11 +24,10 @@
     "wowjs": "^1.1.3"
   },
   "scripts": {
-    "start": "node backend.js",
+    "start": "react-scripts start",
     "build": "react-scripts build",
-    "backend": "nodemon backend.js",
-    "frontend": "npm run front --prefix my-portfolio",
-    "dev": "concurrently \"npm run backend\" \"react-scripts start --prefix my-portfolio\""
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": "react-app"
