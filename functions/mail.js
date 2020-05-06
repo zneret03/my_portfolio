@@ -19,7 +19,7 @@ require("dotenv").config();
             html : message()
         };
 
-       transport.sendMail(mailOption, (err, data) => {
+       return transport.sendMail(mailOption, (err, data) => {
             if(err){
                 callBack(null, err.response);
             }

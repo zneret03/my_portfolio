@@ -31,7 +31,7 @@ app.post('/api/sendMail', async(request, response) => {
             message : request.body.message
         });
 
-        sendMail(request.body.name, request.body.email, (err, data) =>{
+        let email = sendMail(request.body.name, request.body.email, (err, data) =>{
             if(err){
                 response.status(500).json({message : 'Internal Error'});
             }else{
@@ -39,7 +39,7 @@ app.post('/api/sendMail', async(request, response) => {
             }
         })
 
-        return response.status(200).send();
+        return response.status(200).send(email);
     } 
     catch (error) {
         console.log(error.message);
