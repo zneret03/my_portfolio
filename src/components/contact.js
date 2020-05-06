@@ -1,7 +1,6 @@
 import React from 'react';
 import axios from 'axios';
 import swal from 'sweetalert2';
-import db from '../config/fire'
 class Contact extends React.Component
 {
     
@@ -73,17 +72,10 @@ class Contact extends React.Component
         event.preventDefault();
         
         const params = new URLSearchParams();
-        params.append('email', this.state.email);
         params.append('name', this.state.name);
+        params.append('email', this.state.email);
+        params.append('message', this.state.message);
 
-        //add data to server
-        
-        db.collection('email').add({
-            name : this.state.name,
-            email : this.state.email,
-            message : this.state.message
-        });
-        
         
         //to make Cross origin request 
        let config = {
@@ -95,7 +87,7 @@ class Contact extends React.Component
         axios({
             method : "POST",
             headers: config,
-            url : "https://my-portfolio-9cf20.firebaseapp.com/api/sendMail",
+            url : "https://us-central1-my-portfolio-9cf20.cloudfunctions.net/app/api/sendMail",
             data : params,
         }).then(() =>{
             this.contactDialogConfirm();

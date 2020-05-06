@@ -1,5 +1,5 @@
 const nodeMailer = require('nodemailer');
-const { message } = require('./functions/message');
+const { message } = require('./message');
 require("dotenv").config();
 
     const sendMail = (name, email, callBack) =>
