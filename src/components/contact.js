@@ -104,7 +104,7 @@ class Contact extends React.Component
                     <div className="name-tag-line wow fadeInRight"></div>
                     <p className="wow fadeInRight">Have a question or want to work <span>together?</span></p>
                     <div className="container wow bounceIn">
-                        <form onSubmit={this.eventSubmit} action="/api/sendMail" method="POST">
+                        <form onSubmit={this.eventSubmit} className="form-contact" action="/api/sendMail" method="POST">
                         <div className="row">
                             <div className="col-xs-12">
                                     <input type="text" 

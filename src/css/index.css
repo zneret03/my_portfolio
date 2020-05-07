@@ -110,16 +110,16 @@ nav a:hover
 }
 
 /*Contacts */
+.form-contact
+{
+  display: inline-block;
+}
+
 .contact
 {
   position: relative;
   top: 18em;
   text-align: center;
-}
-
-.contact input[type=text], input[type=email], textarea
-{
-  left: 21em;
 }
 
 .contact input[type=text]
@@ -147,10 +147,10 @@ textarea
 
 .contact button
 {
-  position: absolute;
+  position: relative;
   z-index: 1;
-  right: 20rem;
-  margin: 34em 8.8em 5em;
+  left: 13.5em;
+  margin: 5em 10em 5em;
   padding: 9px 35px 9px;
 }
 

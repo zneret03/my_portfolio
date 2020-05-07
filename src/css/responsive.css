@@ -1,4 +1,6 @@
 /*Most of the smart phones*/
+
+
 @media all and (min-width: 320px) and (max-width: 480px)
 {
   .about-me h1
@@ -7,7 +9,6 @@
     font-weight: bold;
     margin: 0px;
   }
-
 
   .about-me h1:nth-child(2)
   {
@@ -159,7 +160,7 @@
   .contact
   {
     position: relative;
-    top: 35em;
+    top: 50em;
     text-align: center;
   }
 
@@ -195,12 +196,11 @@
 
   .contact button
   {
-    position: absolute;
+    position: relative;
     z-index: 1;
-    top: 44em;
-    right: 0em;
-    margin: 0.4em auto;
-    padding: 9px auto 9px;
+    left: 12.4em;
+    margin: 5em 10em 5em;
+    padding: 9px 35px 9px;
   }
 
   .contact p
@@ -267,7 +267,6 @@
    z-index: 1;
  }
 
-
   .sideBar
   {
     height: 100vh;
@@ -328,11 +327,6 @@
   .img-about  
   {
     display: none;
-  }
-
-  .contact input[type=text], input[type=email], textarea
-  {
-    left: 8em;
   }
 
   .contact button
@@ -478,11 +472,6 @@
      text-align: center;
    }
  
-   .contact input[type=text], input[type=email], textarea
-   {
-     left: 2em;
-   }
- 
    .contact input[type=text]
    {
      border: none;
@@ -514,7 +503,7 @@
    {
      position: relative;
      top: 10em;
-     width: 96%;
+     width: 480px;
      border: none;
      -webkit-max-logical-width: 477px;
      background-color: rgb(243, 240, 240);
@@ -522,16 +511,15 @@
    }
   }
  
-   .contact button
-   {
-     position: absolute;
-     z-index: 1;
-     top: 44em;
-     right: 7em;
-     margin: 0.4em auto;
-     padding: 9px auto 9px;
-   }
- 
+  .contact button
+  {
+    position: relative;
+    z-index: 1;
+    left: 13em;
+    margin: 5em 10em 5em;
+    padding: 9px 35px 9px;
+  }
+
    .contact p
    {
      position: relative;
