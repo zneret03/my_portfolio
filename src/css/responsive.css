@@ -25,7 +25,13 @@
   {
     position: relative;
     top: 33em;
+    width: 100%;
   }
+
+  .footer-color
+{
+  background-color: #FFF;
+}
 
   .right img
   {
