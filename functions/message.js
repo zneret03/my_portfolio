@@ -30,7 +30,7 @@ const message = mailOption =>
                         <br/>
                         <br/>
                         <div style="text-align: left;">
-                            <p>Thank you</p>
+                            <p>Thank you!.</p>
                         </div>
                     </div>
                 </body>
@@ -39,4 +39,4 @@ const message = mailOption =>
     `;
 }
 
-module.exports = {message};
+module.exports = { message }; 
