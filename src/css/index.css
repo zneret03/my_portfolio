@@ -74,11 +74,6 @@ code {
   color: #737373;
 }
 
-.navbar-nav
-{
-  flex-direction: row;
-}
-
 a
 {
   font-size: 14px;
@@ -114,8 +109,8 @@ nav a:hover
 .sticky {
   position: fixed;
   top: 0;
-  background-color: #FFF;
   width: 100%;
+  background-color: #FFF;
   z-index: 1;
 }
 
