@@ -31,7 +31,7 @@ code {
 {
   position: relative;
   top: 20em;
-  background-color: rgb(250, 250, 250);
+  background-color: #FAFAFA;
   height: 1050px;
 }
 
@@ -41,15 +41,27 @@ code {
   top: 10em;
 }
 
+/* sideBar */
 .openSideBar
 {
   display: none;
 }
 
+.sideBar 
+{
+  display: none;
+}
+
+.closeBtn
+{
+  transition: all .3s ease;
+}
+/* sideBar */
+
 .skills
 {
   position: relative;
-  top: 30px;
+  top: 5em;
 }
 
 .navbar-color
@@ -98,6 +110,20 @@ nav a:hover
   background-color: #FAFAFA;
 }
 
+/*Navbar scroll sticky*/
+.sticky {
+  position: fixed;
+  top: 0;
+  background-color: #FFF;
+  width: 100%;
+  z-index: 1;
+}
+
+.removeSticky {
+  display: none;
+}
+/*Navbar scroll sticky*/
+
 .footer a
 {
   text-decoration: none;
@@ -118,7 +144,7 @@ nav a:hover
 .contact
 {
   position: relative;
-  top: 18em;
+  top: 23em;
   text-align: center;
 }
 
@@ -292,7 +318,7 @@ textarea
   position: relative;
   background-color: rgb(250, 250, 250);
   -webkit-margin-before: 15.5em;
-  top: 2em;
+  top: 5.9em;
 }
 
 .about_me img
@@ -321,12 +347,6 @@ textarea
   width: 85vh;
 }
 
-.line
-{
-  width: 22%;
-  height: 3px;
-  background-color: #737373;
-}
 
 .hi
 {
@@ -340,6 +360,30 @@ textarea
   text-align: center;
 }
 
+/*Navbar line animation*/
+.line:after
+{
+  /*
+  width: 14%;
+  height: 3px;
+  background-color: #737373;
+  transition: all 0.4s ease-in-out;
+  */
+
+  content: '';
+  display: block;
+  width: 0;
+  height: 3px;
+  background-color: #737373;
+  transition: width .3s;
+}
+
+.line:hover::after
+{
+  width: 100%;
+  transition: width .3s;
+}
+
 .name-tag-line
 {
   position: relative;
@@ -349,18 +393,7 @@ textarea
   height: 4px;
   background-color: #737373;
 }
-
-.nav li:hover:nth-child(2):hover ~ .line
-{
-  transform: translate(119px);
-  transition:  all .4s ease-in-out;
-}
-
-.nav li:hover:nth-child(3):hover ~ .line
-{
-  transform: translate(240px);
-  transition:  all .4s ease-in-out;
-}
+/*Navbar line animation*/
 
 .about-me-info
 {
@@ -528,7 +561,6 @@ textarea
   margin-top: 10px;
   margin-left: 10px;
   position: absolute;
-  z-index: 100;
   font-weight: 700;
   font-size: 2em;
 }
@@ -592,9 +624,6 @@ textarea
 }
 /*Work module*/
 
-.sideBar 
-{
-  display: none;
-}
+
 
 

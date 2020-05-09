@@ -17,7 +17,7 @@ import AnchorLink from 'react-anchor-link-smooth-scroll';
                     <button className={sidebarclass} onClick={closeHandler}>×</button>
                     <ul className="navbar-nav nav"> 
                         <li className="nav-item">
-                            <AnchorLink href="#Home" onClick={closeHandler} className="nav-link nav-link-color mr-5">HOME</AnchorLink>
+                            <AnchorLink href="#landingPage" onClick={closeHandler} className="nav-link nav-link-color mr-5">HOME</AnchorLink>
                         </li>
                         <li className="nav-item">
                             <AnchorLink href="#about" onClick={closeHandler}  className="nav-link nav-link-color mr-5">ABOUT ME</AnchorLink>

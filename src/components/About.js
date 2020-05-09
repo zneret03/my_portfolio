@@ -1,12 +1,41 @@
-//import React, { Component } from 'react'
+import Navbar from './Navbar';
 import React from 'react';
 
 class About_me extends React.Component
 {
+  constructor(){
+    super();
+
+    this.state = {
+      className : false
+    }
+  }
+
+  componentDidMount(){
+    window.addEventListener('scroll', () => {
+      const scrollTop = window.pageYOffset < 560 ;
+
+      if(scrollTop !== true){
+        this.setState({
+          className: true
+        });
+      }else{
+        this.setState({
+          className: false
+        });
+      }
+    });   
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('scroll');
+  }
+
   render()
   {
     return(
-      <div id="about">
+      <div id="about" defaultValue="">
+       <div className="text-center"><Navbar navbar={this.state.className}/></div>
         <h1 className="about font-weight-bold wow fadeInRight">ABOUT</h1>
         <div className="name-tag-line wow fadeInRight"></div>
            <div className="container about_me" >

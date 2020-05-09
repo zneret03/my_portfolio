@@ -1,16 +1,56 @@
 import React from "react";
-import Nav from './Navbar';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
+import SideBar from './sideBar';
 
 class Home extends React.Component
 {
+    constructor()
+    {
+        super();
+        this.state =
+        {
+            open : false
+        }
+    }
+
+    openHandler = () =>{
+        if(!this.state.open){
+            //setOpenSideBar(true);
+            this.setState({
+                open : true
+            });
+        }
+        else{
+            //setOpenSideBar(false);
+            this.setState({
+                open : false
+            });
+        }
+    }
+
+    closeSideBar = () =>{
+        this.setState({
+            open:  false
+        });
+    }
+
   render(){
+    
+    let sidebar;
+    if(this.state.open)
+    {
+       sidebar = <SideBar close={() => {this.closeSideBar()}} sidebar={"closebtn"}/>
+    }
+
     return(
       <div>
           <div className="container" id="landingPage">
+          <div className="toggle">
+                <button className="openSideBar" onClick={() => {this.openHandler()}}>☰</button>
+            </div>
+            {sidebar}
             <div className="row">
               <div className="col-lg-6">
-                <Nav/>
                   <div className="mt-5 main-info-section  animated fadeInDown" id="Home">
                   <h1>
                     <span className="font-weight-bold hvr-grow">H</span>

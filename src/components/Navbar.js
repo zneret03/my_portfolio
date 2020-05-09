@@ -1,70 +1,35 @@
 import React from 'react';
-import SideBar from './sideBar';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 class Nav extends React.Component
 {
-    constructor()
-    {
-        super();
-        this.state =
-        {
-            open : false
-        }
-    }
-
-     openHandler = () =>{
-        if(!this.state.open){
-            //setOpenSideBar(true);
-            this.setState({
-                open : true
-            });
-        }
-        else{
-            //setOpenSideBar(false);
-            this.setState({
-                open : false
-            });
-        }
-    }
-
-     closeSideBar = () =>{
-         this.setState({
-            open:  false
-         });
-    }
-
     render()
     {
-
-        let sidebar;
-        if(this.state.open)
-        {
-           sidebar = <SideBar close={() => {this.closeSideBar()}} sidebar={"closebtn"}/>
-        }
-
         return (
             <div>
-                <div className="toggle">
-                    <button className="openSideBar" onClick={() => {this.openHandler()}}>☰</button>
-                </div>
-                {sidebar}
-                <nav className="mb-1 navbar navbar-expand-lg p-3" id="nav">
-                    <div className="collapse navbar-collapse" id="NavbarContent" >
-                        <ul className="navbar-nav nav">
+                <nav className="navbar navbar-expand-lg" id="nav">
+                    <div className={(this.props.navbar  ? 'collapse navbar-collapse p-3 sticky' : 'collapse navbar-collapse removeSticky')} id="NavbarContent" >
+                        <ul className="navbar-nav nav mx-auto">
+                                <li className="nav-item">
+                                    <AnchorLink href="#landingPage" 
+                                    className="nav-link nav-link-color animated fadeInDown mr-5 line">
+                                     HOME</AnchorLink>
+                                </li>
                                 <li className="nav-item">
                                     <AnchorLink href="#about" 
-                                    className="nav-link nav-link-color
-                                     animated fadeInDown mr-5"
-                                     >ABOUT ME</AnchorLink>
+                                    className="nav-link nav-link-color animated fadeInDown mr-5 line">
+                                     ABOUT ME</AnchorLink>
                                 </li>
                                 <li className="nav-item">
-                                    <AnchorLink href="#skills" className="nav-link nav-link-color animated fadeInDown mr-5">SKILLS</AnchorLink>
+                                    <AnchorLink href="#skills" 
+                                    className="nav-link nav-link-color animated fadeInDown mr-5 line">
+                                    SKILLS</AnchorLink>
                                 </li>
                                 <li className="nav-item mr-5">
-                                    <AnchorLink href="#work" className="nav-link nav-link-color animated fadeInDown mr-5">MY WORK</AnchorLink>
+                                    <AnchorLink href="#work"
+                                     className="nav-link nav-link-color animated fadeInDown mr-5 line">
+                                     MY WORK</AnchorLink>
                                 </li>
-                            <div className="line"></div>
                         </ul>
                     </div>
                 </nav>
