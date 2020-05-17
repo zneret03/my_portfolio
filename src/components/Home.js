@@ -43,7 +43,7 @@ class Home extends React.Component
     }
 
     return(
-      <div>
+      <div className="Home">
           <div className="container" id="landingPage">
           <div className="toggle">
                 <button className="openSideBar" onClick={() => {this.openHandler()}}>☰</button>

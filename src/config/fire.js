@@ -2,17 +2,15 @@
   import 'firebase/auth'
   import 'firebase/firestore'
 
-  require('dotenv').config();
-
   var firebaseConfig = {
-    apiKey: "AIzaSyCongVUJ-XOlZXfKIs1ljf-YGV7aELLtK0",
-    authDomain: "my-portfolio-9cf20.firebaseapp.com",
-    databaseURL: "https://my-portfolio-9cf20.firebaseio.com",
-    projectId: "my-portfolio-9cf20",
-    storageBucket: "my-portfolio-9cf20.appspot.com",
-    messagingSenderId: "63695806463",
-    appId: "1:63695806463:web:4edf5ee0d09b0ee12e51ca",
-    measurementId: "G-RDQQKM7QT0"
+    apiKey: process.env.REACT_APP_FIREBASE_KEY,
+    authDomain: process.env.REACT_APP_FIREBASE_DOMAIN,
+    databaseURL: process.env.REACT_APP_FIREBASE_DATABASE,
+    projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
+    storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
+    messagingSenderId: process.env.REACT_APP_FIREBASE_SENDER_ID,
+    appId: process.env.REACT_APP_FIREBASE_APP_ID,
+    measurementId: process.env.REACT_APP_FIREBASE_MEASUREMENT_ID
   };
 
   // Initialize Firebase
