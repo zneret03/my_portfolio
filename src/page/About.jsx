@@ -1,4 +1,4 @@
-import Navbar from '../components/Navbar';
+import Navbar from '../components/Navbar.jsx';
 import React from 'react';
 
 class About_me extends React.Component

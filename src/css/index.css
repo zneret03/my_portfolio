@@ -6,6 +6,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  
 }
 
 code {
@@ -42,6 +43,7 @@ code {
 
 .sideBar 
 {
+  font-family: 'Montserrat', sans-serif;
   display: none;
 }
 
