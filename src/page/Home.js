@@ -88,7 +88,7 @@ class Home extends React.Component
                 </div> 
                 <div className="col-lg-6">
                 <div className="right">
-                  <img className="animated fadeIn" src={require('../components/image/mountain.jpg')} alt={this.props.Image}/>
+                  <img className="animated fadeIn" src={require('../components/image/mountain-min.jpg')} alt={this.props.Image}/>
                 </div>
                 </div>
               </div> 
