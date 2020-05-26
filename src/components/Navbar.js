@@ -16,8 +16,9 @@ class Nav extends React.Component
         return (
             <div>
                 <nav className="navbar navbar-expand-lg navbar-nav" id="nav">
-                    <div className={(this.props.navbar  ? 'collapse navbar-collapse p-3 sticky' : 'collapse navbar-collapse removeSticky')} id="NavbarContent"> 
-                        <ul className="navbar-nav nav mx-auto   ">
+                    <div className={(this.props.navbar  ? 'collapse navbar-collapse p-3 sticky shadow-sm p-3 mb-5 bg-white rounded' 
+                    : 'collapse navbar-collapse removeSticky')} id="NavbarContent"> 
+                        <ul className="navbar-nav nav mx-auto">
                                 <li className="nav-item">
                                     <AnchorLink href="#landingPage" 
                                     className="nav-link nav-link-color animated fadeInDown ml-3 mr-5 line">

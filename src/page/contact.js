@@ -3,11 +3,6 @@ import axios from 'axios';
 import swal from 'sweetalert2';
 class Contact extends React.Component
 {
-    
-    /*
-        TODO: Make api end point using firebase functions and deploy it online
-        TODO: learn how to implement proper firebase functions
-    */
     constructor()
     {
         super();

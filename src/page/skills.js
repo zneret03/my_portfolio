@@ -9,6 +9,7 @@ class Skills extends React.Component
             <div className="skills" id="skills">
                 <h1 className="about font-weight-bold skills wow fadeInLeft">MY SKILLS</h1>
                 <div className="name-tag-line wow fadeInLeft"></div>
+                <h2 className="wow fadeInLeft">Skills</h2>
                 <div className="container">
                     <br/>
                     <div className="row">

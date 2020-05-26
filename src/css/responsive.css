@@ -1,6 +1,10 @@
 /*Most of the smart phones*/
 @media all and (min-width: 320px) and (max-width: 480px)
 {
+  .skills h2 {
+    display: none;
+   }
+
   .about-me h1
   {
     font-family: 'Montserrat', sans-serif;
@@ -65,16 +69,17 @@
 
   .overlay
   {
-    position: absolute;
-    bottom: 100%;
-    left: 0;
-    right: 0;
-    background-color: white;
-    overflow: hidden;
-    width: 100%;
-    height: 0;
-    transition: .5s ease;
-  }
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: rgba(14, 13, 13, 0.4);
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+  } 
+
 
   .flex:hover .overlay
   {
@@ -231,6 +236,10 @@
 /* Laptop Desktop Size*/
 @media all and (min-width: 1025px) and (max-width: 1280px)
 {
+  .skills h2 {
+    display: none;
+   }
+
   #about
   {
     position: relative;
@@ -241,6 +250,7 @@
     top: 2em;
   }
 
+/*
   .right
   {
     width: 665px;
@@ -248,18 +258,26 @@
     -webkit-max-logical-width: 100%;
     -webkit-max-logical-height: auto;
   }
+  */
 
   .right img
   {
     height: auto;
-    max-width: 100%;
-    -webkit-max-logical-width: 100%;
+    width: 600px;
+    position: relative;
+    top: 30px;
+    -webkit-max-logical-width:  103.5vh;
   }
 }
 
 /*Tables and ipads*/
 @media all and (min-width: 768px) and (orientation: portrait)
 {
+  .skills h2 {
+    display: none;
+   }
+
+
    /*Side bar toggle*/
  .openSideBar
  {
@@ -270,6 +288,7 @@
    font-size: 30px;
    z-index: 1;
  }
+
 
   .sideBar
   {
@@ -353,6 +372,10 @@
 
 @media all and (min-width: 1024px) and (orientation: portrait)
 {
+  .skills h2 {
+    display: none;
+   }
+
   .right img
   {
     display: none;
@@ -396,9 +419,20 @@
     padding: 0px auto 0px;
   }
 }
+
+@media all and  (max-width: 980px){
+  .right img {
+    display: none;
+  }
+} 
  
 @media all and  (min-width: 481px) and (max-width: 767px) 
 {
+  .skills h2 {
+    display: none;
+   }
+
+   
   .right img 
   {
     display: none;
@@ -408,6 +442,10 @@
   {
     display: none;
   }
+
+  .skills h2 {
+    display: none;
+   }
 
   /*Work module*/
   .flex
@@ -431,16 +469,17 @@
 
   .overlay
   {
-    position: absolute;
-    bottom: 100%;
-    left: 0;
-    right: 0;
-    background-color: white;
-    overflow: hidden;
-    width: 100%;
-    height: 0;
-    transition: .5s ease;
-  }
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: rgba(14, 13, 13, 0.4);
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+  } 
+
 
   .flex:hover .overlay
   {

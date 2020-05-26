@@ -27,13 +27,6 @@ code {
   color: #a8a1a1;
 }
 
-.work 
-{
-  position: relative;
-  top: 20em;
-  background-color: #FAFAFA;
-  height: 1050px;
-}
 
 .mrg
 {
@@ -62,6 +55,18 @@ code {
 {
   position: relative;
   top: 5em;
+}
+
+.skills h2{
+  position: absolute;
+  transition: ease-in 0.5s;
+  top: 0px;
+  left: 10px;
+  z-index: -1;
+  text-shadow: 0 0 5px rgba(240, 227, 227, 0.5);
+  color: transparent;
+  font-size: 20em;
+  font-weight: bold;
 }
 
 .navbar-color
@@ -330,7 +335,9 @@ textarea
 {
   height: auto;
   width: 662px;
-  /*box-shadow: 0 5em 1.5em rgba(80, 79, 79, 0.1);*/
+  position: relative;
+  top: 30px;
+  right: 50px;
   -webkit-max-logical-width:  103.5vh;
 }
 
@@ -575,6 +582,32 @@ textarea
   display: flex;
 }
 
+.flex a:hover {
+  text-decoration: none;
+}
+
+.work 
+{
+  position: relative;
+  top: 20em;
+  background-color: #FAFAFA;
+  height: 1050px;
+}
+
+.work h5 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.work-btn 
+{
+  border: 1px solid white;
+  border-radius: 3px;
+  padding: 10px 20px 10px;
+  background-color: none;
+  color: transparent;
+  cursor: pointer;
+}
+
 .flex-image
 {
   display: flex;
@@ -593,18 +626,19 @@ textarea
   bottom: 100%;
   left: 0;
   right: 0;
-  background-color: white;
+  background-color: rgba(14, 13, 13, 0.4);
   overflow: hidden;
   width: 100%;
   height: 0;
   transition: .5s ease;
-}
+} 
+
 
 .flex:hover .overlay
 {
   bottom: 0;
   height: 100%;
-}
+} 
 
 .text
 {
