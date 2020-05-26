@@ -1,10 +1,10 @@
 import React from 'react';
-import Home from './Home';
-import About from './About.js';
-import Skills from './skills.js';
-import Work from './Work.js';
+import Home from '../page/Home';
+import About from '../page/About.js';
+import Skills from '../page/skills.js';
+import Work from '../page/Work.js';
 import Footer from './footer.js';
-import Contact from './contact';
+import Contact from '../page/contact.js';
 
 class Root extends React.Component
 {

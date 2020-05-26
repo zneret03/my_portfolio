@@ -25,7 +25,6 @@ app.use(cookieParser());
 
 //create data
 app.post('/api/sendMail', async(request, response) => {
-    
     try {
         //save to database
         const documents = db.collection('email').doc();
