@@ -57,7 +57,7 @@ class Home extends React.Component
                   </h1>
                   <h1>
                   <HomeDesign className={'font-weight-bold hvr-grow'} letter={"I'm"}/>
-                  <HomeDesign className={'font-weight-bold text-danger hvr-grow ml-2'} letter={'Ian'}/>
+                  <HomeDesign className={'text-primary font-weight-bold hvr-grow ml-2'} letter={'Ian'}/>
                   </h1>
                   <h1>
                     <span><ReactTypingEffect className="font-weight-bold hvr-grow" speed={100} eraseDelay={5000}

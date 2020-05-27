@@ -192,7 +192,7 @@ textarea
 
 .contact span
 {
-  color: rgb(255, 0, 4);
+  color: #6C63FF;
 }
 
 .contact input
@@ -216,16 +216,20 @@ textarea
 
 .btn-contact
 {
-  border: 3px solid #9F5E60;
+  border: 3px solid #6C63FF;
   background-color: transparent;
   padding: 9px 20px 9px;
   margin: 3em 0px 0px;
   font-size: 13px;
-  color: #a8a1a1;
+  color: #868181;
   font-family: 'Montserrat', sans-serif;
   position: relative;
   top: 9em;
   margin: 8em 0;
+}
+
+.btn-contact:hover{
+  color : white
 }
 
 .btn-contact::after
@@ -238,7 +242,7 @@ textarea
   height: 100%;
   transform: scaleY(0);
   transform-origin: top center;
-  background: #9F5E60;
+  background: #6C63FF;
   z-index: -1;
   transition: transform 0.3s;
 }
@@ -396,7 +400,7 @@ textarea
   margin: 0 auto;
   width: 8%;
   height: 4px;
-  background-color: #737373;
+  background-color: #6C63FF;
 }
 /*Navbar line animation*/
 
