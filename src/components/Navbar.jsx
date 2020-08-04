@@ -17,7 +17,7 @@ class Nav extends React.Component
                 <nav className="navbar navbar-expand-lg navbar-nav" id="nav">
                     <div className={(this.props.navbar  ? 'collapse navbar-collapse p-3 sticky shadow-sm p-3 mb-5 bg-white rounded' 
                     : 'collapse navbar-collapse p-3 removeSticky ')} id="NavbarContent"> 
-                        <a className="navbar-brand ml-4">LOGO</a>
+                        <a href="#landingPag" className="navbar-brand ml-4">LOGO</a>
                         <ul className="navbar-nav nav">
                                 <li className="nav-item mr-2">
                                     <AnchorLink href="#landingPage" 
