@@ -8,7 +8,7 @@ const workImages = (props) =>{
                 <div className="text">
                     <h5 className="text-white">{props.projects}</h5>
                     <br/>
-                    <a href={props.link} className="work-btn text-white">Learn more</a>
+                    <a href={props.link} className="work-btn text-white">Open</a>
                 </div>
             </div>
         </div>

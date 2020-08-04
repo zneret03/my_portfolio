@@ -11,8 +11,8 @@ class Work extends React.Component
                 <div className="name-tag-line wow fadeInRight"></div>
                 <div className="container mrg">
                 <div className="flex-image wow fadeInUp" alt="first column image">
-                    <Img image={'1-min.jpg'} link={'https://www.facebook.com/ian.drilon.7'} projects={'ReactJs/NodeJs'}/>
-                    <Img image={'2-min.jpg'} link={'https://www.facebook.com/ian.drilon.7'} projects={'ReactJs/NodeJs'}/>
+                    <Img image={'github-pages.png'} link={'https://gitprofilee.netlify.app'} projects={'ReactJs/tailwind'}/>
+                    <Img image={'BCIF.png'} link={'https://bcif.netlify.app'} projects={'ReactJs/NodeJs'}/>
                     <Img image={'3-min.jpg'} link={'https://www.facebook.com/ian.drilon.7'} projects={'ReactJs/NodeJs'}/>
                 </div>
                 <div className="flex-image wow fadeInUp" alt="second column image">
